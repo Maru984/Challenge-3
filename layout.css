@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700);
+
+h4{
+  color:white;
+  font-size:30px;
+  display:flex;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 16px;
+  background-color: black;
+}
+
+
+.map {
+  height: 400px;
+  width: 100%;
+  background: url(map-background.jpg) repeat;
+  margin-bottom: 10px;
+  display:inline-block;
+  justify-content: center;
+}
+
+.knoppen {
+  display:block;
+  min-block-size: 80px;
+  border: none;
+  outline: none;
+}
+
+@media only screen and (min-width: 768px){
+  .map {
+    height: 300px;
+    width: 100%;
+    display:inline-flexbox;
+  }
+
+  h4{
+    font-size:40px;
+    display:inline-table;
+    margin-left:230px;
+  }
+
+  .knoppen {
+    display:flex;
+    max-width:500px;
+    justify-content:space-between;
+    text-align:center;
+    margin-left:18%;
+  }
+
+}
+
+@media only screen and (min-width: 1024px){
+  .map {
+    height: 600px;
+    width: 100%;
+    display:inline-block;
+    margin-left:28px;
+  }
+
+  h4{
+    font-size:60px;
+    margin-left:30px;
+    display:flex;
+  }
+
+  .knoppen {
+    display:block;
+    max-width:600px;
+  }
+
+}
+
+@media only screen and (min-width: 1200px){
+  .map {
+    height: 800px;
+    width: 100%;
+    display:block;
+  }
+
+  .knoppen {
+    display:inline-block;
+   margin-left:30%;
+   width:100%;
+   justify-content:space-between;
+  }
+
+  h4{
+    font-size:80px;
+    margin-left:30px;
+    display:flex;
+  }
+}
